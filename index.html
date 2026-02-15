@@ -1,243 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nayana Preethi - Portfolio</title>
+    <title>Nayana Preethi | AI Engineer & LLM Developer</title>
+    <meta name="description"
+        content="Portfolio of Nayana Preethi Raghunathan - AI/ML & NLP Developer specializing in LLMs and RAG systems.">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Poppins:wght@800&display=swap" rel="stylesheet">
-    <script defer src="script.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <h1>...Nayana Preethi...</h1>
-            <ul>
-                <li><a href="#home">Home</a></li>
+    <!-- Background Particles Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Nayana <span>Preethi</span></a>
+            <div class="menu-btn" id="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#work">Experience</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <span class="dark-mode-toggle"></span>
-        </nav>
-    </header>
-    
-    <section id="home" class="hero">
-                <div class="home-container">
-            <img src="images/Nayana Preethi.jpg" alt="Nayana Preethi" class="home-profile-pic">
-            <h2>Nayana Preethi Raghunathan</h2>
-            <p class="tagline">AI and NLP Researcher and Developer</p>
-            <p class="intro">Innovator. Creator. Technologist.</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/nayana-preethi-raghunathan" target="_blank">
-                    <img src="images/linkedin-logo.png" alt="LinkedIn" class="social-icon">
-                </a>
-                <a href="https://github.com/nayanapreethi" target="_blank">
-                    <img src="images/github-logo.png" alt="GitHub" class="social-icon">
-                </a>
-                <a href="https://leetcode.com/u/Nayana_Preethi/" target="_blank">
-                    <img src="images/leetcode-logo.png" alt="LeetCode" class="social-icon">
-                </a>
-            </div>
         </div>
-    </section>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="about-container">
-            <div class="about-text">
-                <p>I am an AI and NLP enthusiast passionate about developing LLMs and Generative AI applications. Currently pursuing my undergraduate degree in AI and Machine Learning, I specialize in artificial intelligence, deep learning, and machine learning. My expertise extends to UI/UX design, no-code/low-code development, and fine-tuning large language models. I actively explore advancements in Generative AI, Retrieval-Augmented Generation (RAG), and Deep Learning techniques. With a keen interest in pushing AI innovation, I aim to create impactful solutions that enhance human-AI interactions and streamline automation. Constantly learning, I strive to stay ahead in the ever-evolving AI landscape.</p>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section">
+            <div class="container hero-content">
+                <h1 class="reveal">Nayana Preethi <span class="accent">Raghunathan</span></h1>
+                <div class="typing-container reveal">
+                    I am a <span id="typing-text"></span><span class="cursor">|</span>
+                </div>
+                <p class="hero-sub reveal">Passionate AI and NLP developer specializing in machine learning, deep
+                    learning, LLMs, and Generative AI applications.</p>
+                <div class="hero-btns reveal">
+                    <a href="#projects" class="btn btn-primary ripple">View Projects</a>
+                    <a href="Nayana Resume.docx.pdf" class="btn btn-secondary ripple" download>Download Resume</a>
+                    <a href="https://linkedin.com/in/nayana-preethi-raghunathan" target="_blank"
+                        class="btn btn-outline ripple">Get in Touch</a>
+                </div>
             </div>
-        </div>
-    </section>
-    
-    <section id="education">
-        <h2>Educational Qualifications</h2>
-        <ul>
-            <li>
-                <strong>SNS College of Technology, Coimbatore, India</strong><br>
-                Bachelors in Technology - Artificial Intelligence And Machine Learning<br>
-                CGPA: 8.895<br>
-                11/2022 - 04/2026
-            </li>
-            <li>
-                <strong>SSKV Matric Hr. Sec. School, Kanchipuram, India</strong><br>
-                12th Grade (HSC) - 87.33%<br>
-                06/2021 - 07/2022
-            </li>
-            <li>
-                <strong>Bharathidaasan Matric Hr. Sec. School, Kanchipuram, India</strong><br>
-                10th Grade (SSLC) - 98.6%<br>
-                05/2019 - 05/2020
-            </li>
-        </ul>
-    </section>
-    
-    <section id="skills">
-        <h2>Skills & Languages Known</h2>
-        <div class="skills-container">
-            <div class="soft-skills">
-                <h3>Soft Skills</h3>
-                <ul>
-                    <li>Problem Solving</li>
-                    <li>Critical Thinking</li>
-                    <li>Communication</li>
-                    <li>Observation</li>
-                    <li>Adaptability</li>
-                    <li>Team Work</li>
-                    <li>Leadership</li>
-                </ul>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
             </div>
-            <div class="technical-skills">
-                <h3>Technical Skills</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>C</li>
-                    <li>C++</li>
-                    <li>Data Structures and Algorithms</li>
-                    <li>MySQL</li>
-                    <li>MongoDB</li>
-                    <li>Data Analytics</li>
-                    <li>Machine Learning</li>
-                    <li>Deep Learning</li>
-                    <li>Natural Language Processing</li>
-                    <li>Large Language Models</li>
-                </ul>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">About <span class="accent">Me</span></h2>
+                <div class="about-grid">
+                    <div class="about-image reveal">
+                        <div class="image-wrapper">
+                            <img src="assets/Nayana Preethi.jpg" alt="Nayana Preethi">
+                        </div>
+                    </div>
+                    <div class="about-text reveal">
+                        <p>I am a dedicated AI/ML and NLP Developer with a strong foundation in building impactful
+                            AI-driven solutions. My expertise lies in LLMs, RAG systems, and model fine-tuning. I thrive
+                            at the intersection of complex problem solving and innovative technology.</p>
+
+                        <div class="education-card">
+                            <h3>Education</h3>
+                            <p><strong>B.Tech in Artificial Intelligence & Machine Learning</strong></p>
+                            <p>SNS College of Technology</p>
+                            <div class="badge-row">
+                                <span class="badge">CGPA: 8.895</span>
+                                <span class="badge">Class of 2026</span>
+                            </div>
+                        </div>
+
+                        <p class="objective"><strong>Career Objective:</strong> Eager to build impactful AI-driven
+                            solutions and contribute to the rapidly evolving landscape of Generative AI. Hands-on
+                            experience in model fine-tuning, RAG systems, and no-code/low-code development.</p>
+                    </div>
+                </div>
             </div>
-            <div class="languages">
-                <h3>Languages</h3>
-                <ul>
-                    <li>English</li>
-                    <li>Tamil</li>
-                    <li>German</li>
-                    <li>Hindi</li>
-                </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">My <span class="accent">Expertise</span></h2>
+
+                <div class="skills-wrapper">
+                    <div class="skill-category reveal">
+                        <h3>Programming</h3>
+                        <div class="skill-list">
+                            <div class="skill-tag">Python</div>
+                            <div class="skill-tag">C</div>
+                            <div class="skill-tag">C++</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category reveal">
+                        <h3>Frameworks & Tools</h3>
+                        <div class="skill-list">
+                            <div class="skill-tag">Transformers</div>
+                            <div class="skill-tag">LangChain</div>
+                            <div class="skill-tag">OpenAI API</div>
+                            <div class="skill-tag">TensorFlow</div>
+                            <div class="skill-tag">PyTorch</div>
+                            <div class="skill-tag">Keras</div>
+                            <div class="skill-tag">Scikit-Learn</div>
+                            <div class="skill-tag">Hugging Face</div>
+                            <div class="skill-tag">PEFT</div>
+                            <div class="skill-tag">Accelerate</div>
+                            <div class="skill-tag">Ollama</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category reveal">
+                        <h3>Technologies</h3>
+                        <div class="skill-list">
+                            <div class="skill-tag">Machine Learning</div>
+                            <div class="skill-tag">Deep Learning</div>
+                            <div class="skill-tag">NLP</div>
+                            <div class="skill-tag">LLMs</div>
+                            <div class="skill-tag">Data Analytics</div>
+                            <div class="skill-tag">MySQL</div>
+                            <div class="skill-tag">MongoDB</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="tools">
-                <h3>Tools</h3>
-                <ul>
-                    <li>Figma</li>
-                    <li>Canva</li>
-                    <li>GitHub</li>
-                    <li>Hugging Face</li>
-                    <li>Ollama</li>
-                    <li>OpenAI</li>
-                    <li>PyTorch</li>
-                    <li>GPT4All</li>
-                </ul>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Experience <span class="accent">Journey</span></h2>
+                <div class="timeline">
+                    <!-- Exp 1 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass">
+                            <span class="timeline-date">May 2025 – June 2025</span>
+                            <h3>AI Azure Intern</h3>
+                            <p class="company">Microsoft</p>
+                            <p>Built ML models using Azure AI tools, leveraging cloud infrastructure for scalable AI
+                                solutions.</p>
+                        </div>
+                    </div>
+                    <!-- Exp 2 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass">
+                            <span class="timeline-date">June 2025</span>
+                            <h3>Data Science Intern</h3>
+                            <p class="company">Postulate Info Tech Pvt. Ltd</p>
+                            <p>Applied machine learning and statistical analysis to extract insights from complex
+                                datasets.</p>
+                        </div>
+                    </div>
+                    <!-- Exp 3 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass">
+                            <span class="timeline-date">Jul 2024</span>
+                            <h3>ML Intern</h3>
+                            <p class="company">Nitroware Technologies</p>
+                            <ul>
+                                <li>Data preprocessing and pipeline development</li>
+                                <li>Model training & hyperparameter tuning</li>
+                                <li>Stack: Python, TensorFlow, Scikit-learn</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    
-    <section id="work">
-        <h2>Work Experience</h2>
-        <ul>
-            <li><strong>Machine Learning Intern</strong> - Nitroware Technologies, Coimbatore, India.
-                <p>Duration - July 2024</p>
-                <p>Worked closely with experienced ML experts to develop innovative machine learning solutions, gaining hands-on experience in the entire ML pipeline.</p>
-            </li>
-            <li><strong>UI/UX Design Intern</strong> - Cognifyz Technologies, Remote.
-                <p> Duration - May 2024</p>
-                <p>Collaborated with designers to create intuitive user interfaces, engaging in user research, wireframing, prototyping, and visual design.</p>
-            </li>
-            <li><strong>AI Azure Intern</strong> – Microsoft with EdunetFoundation, Remote.
-                <p> Duration - May 2025 - June 2025</p>
-                <p>Worked and Gained practical AI Azure experience, building machine learning models with Azure AI tools to solve real-world problems.</p>
-            </li>
-            <li><strong>Data Science Intern</strong> – Postulate Info Tech Pvt.Ltd, Coimbatore, India.
-                <p> Duration - June 2025</p>
-                <p>Worked and Gained practical data science experience, applying machine learning and statistical analysis to extract insights and solve real-world problems.</p>
-            </li>
-        </ul>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <strong>No Code Apps</strong>
-                <p>Developed multiple applications using no-code platforms to streamline workflows and enhance productivity.</p>
-            </li>
-            <li>
-                <strong>Mental Health Tracker</strong>
-                <p>A web-based application designed to monitor and improve mental well-being through personalized recommendations and tracking features.</p>
-            </li>
-            <li>
-                <strong>Bloodhub</strong>
-                <p>A platform to connect blood donors with recipients, ensuring timely and efficient blood donation processes.</p>
-            </li>
-            <li>
-                <strong>AI based Personalized Student Learning Platform</strong>
-                <p>Designed an AI-powered personalized learning platform that adapts content based on performance and preferences.</p>
-            </li>
-            <li>
-               <strong>AI based Next Gen: Career Platform</strong> 
-                <p>Each student receives a customized learning path tailored to their individual needs and learning style,interactive exercises and ensuring optimal progress andassessments to reinforce learning,engagement.</p>
-            </li>    
-        </ul>
-    </section>
-    
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li><strong>Certified Data Scientist</strong> - DevTown (October 2023)</li>
-            <li><strong>Data Structures & Algorithms Training</strong> - DevTown (September 2023)</li>
-            <li><strong>Java</strong> - DevTown (September 2023)</li>
-            <li><strong>C++</strong> - DevTown (September 2023)</li>
-            <li><strong>Competitive Programming</strong> - DevTown (September 2023)</li>
-            <li><strong>Product Management MBA</strong> - edX (January 2024)</li>
-            <li><strong>Database Management System Part 1 & Part 2</strong> - InfySpringboard (May 2024)</li>
-            <li><strong>Advanced Learning Algorithms</strong> - Coursera, DeepLearning.AI, Stanford University (March 2025)</li>
-            <li><strong>Machine Learning</strong> - Coursera, DeepLearning.AI, Stanford University (March 2025)</li>
-            <li><strong>Supervised Machine Learning: Regression and Classification</strong> - Coursera, DeepLearning.AI, Stanford University (March 2025)</li>
-            <li><strong>Unsupervised Learning, Recommenders, Reinforcement Learning</strong> - Coursera, DeepLearning.AI, Stanford University (March 2025)</li>
-        </ul>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <p>Email: nayanapreethi2005@gmail.com</p>
-                <p>Phone: +91 9543024768</p>
-                <p>Address: 41, Diyaan Garden, Gandhi Nagar, EB Colony, Karamadai Road, Mettupalayam, Coimbatore - 641104</p>
-                <p>Socials: 
-                    <a href="https://www.linkedin.com/in/nayana-preethi-raghunathan">LinkedIn</a> | 
-                    <a href="https://github.com/nayanapreethi">GitHub</a> | 
-                    <a href="https://leetcode.com/u/Nayana_Preethi/">LeetCode</a>
-                </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Featured <span class="accent">Projects</span></h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass reveal">
+                        <div class="project-info">
+                            <h3>Mental Health Tracker</h3>
+                            <p>AI-powered mood analysis and mental wellbeing tracker using hybrid machine learning
+                                approaches.</p>
+                            <div class="tech-stack">
+                                <span>SVM</span>
+                                <span>K-Means</span>
+                                <span>MySQL</span>
+                            </div>
+                            <a href="#" class="project-link ripple">View Project</a>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card glass reveal">
+                        <div class="project-info">
+                            <h3>Bloodhub</h3>
+                            <p>Geolocation-based donor matching system connecting patients with donors in real-time.</p>
+                            <div class="tech-stack">
+                                <span>Firebase</span>
+                                <span>Google Maps API</span>
+                            </div>
+                            <a href="#" class="project-link ripple">View Project</a>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-card glass reveal">
+                        <div class="project-info">
+                            <h3>Student Learning Platform</h3>
+                            <p>Personalized learning assistant using reinforcement learning to adapt to student
+                                progress.</p>
+                            <div class="tech-stack">
+                                <span>RL</span>
+                                <span>OpenCV</span>
+                            </div>
+                            <a href="#" class="project-link ripple">View Project</a>
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="project-card glass reveal">
+                        <div class="project-info">
+                            <h3>No-Code Productivity Tools</h3>
+                            <p>Collection of custom automation tools built using low-code/no-code ecosystems.</p>
+                            <div class="tech-stack">
+                                <span>Zapier</span>
+                                <span>Glide</span>
+                                <span>MIT App Inventor</span>
+                            </div>
+                            <a href="#" class="project-link ripple">View Project</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="contact-form">
-                <h3>Get In Touch</h3>
-                <form action="https://formspree.io/f/{your-form-id}" method="POST">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" required>
-                    
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                    
-                    <button type="submit">Send</button>
-                </form>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Certifications <span class="accent">& Achievements</span></h2>
+                <div class="cert-grid">
+                    <div class="cert-item glass reveal">
+                        <h4>Machine Learning Specialization</h4>
+                        <p>Stanford & DeepLearning.AI</p>
+                    </div>
+                    <div class="cert-item glass reveal">
+                        <h4>Certified Data Scientist</h4>
+                        <p>DevTown</p>
+                    </div>
+                    <div class="cert-item glass reveal">
+                        <h4>Data Structures & Algorithms</h4>
+                        <p>DevTown</p>
+                    </div>
+                    <div class="cert-item glass reveal">
+                        <h4>Java / C++ / Competitive Programming</h4>
+                        <p>DevTown</p>
+                    </div>
+                    <div class="cert-item glass reveal">
+                        <h4>DBMS</h4>
+                        <p>InfySpringboard</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="map-container">
-            <h3>Find Me Here</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d244.55928220246247!2d76.95851592277936!3d11.265195002177325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1768205526711!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section>
-    
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Get In <span class="accent">Touch</span></h2>
+                <div class="contact-links-wrapper reveal">
+                    <a href="mailto:nayanapreethi2005@gmail.com" class="contact-card glass ripple">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>nayanapreethi2005@gmail.com</p>
+                    </a>
+                    <a href="https://linkedin.com/in/nayana-preethi-raghunathan" target="_blank"
+                        class="contact-card glass ripple">
+                        <div class="contact-icon">🔗</div>
+                        <h3>LinkedIn</h3>
+                        <p>nayana-preethi-raghunathan</p>
+                    </a>
+                    <a href="https://github.com/nayanapreethi" target="_blank" class="contact-card glass ripple">
+                        <div class="contact-icon">💻</div>
+                        <h3>GitHub</h3>
+                        <p>nayanapreethi</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025. Nayana Preethi Raghunathan. All Rigts Are Reserved</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="#" target="_blank" class="social-icon ripple">GitHub</a>
+                    <a href="#" target="_blank" class="social-icon ripple">LinkedIn</a>
+                    <a href="mailto:nayanapreethi2005@gmail.com" class="social-icon ripple">Email</a>
+                </div>
+                <p>&copy; 2026 Nayana Preethi Raghunathan. All rights reserved.</p>
+            </div>
+        </div>
+        <button id="scroll-top" class="ripple">↑</button>
     </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
